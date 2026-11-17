@@ -133,7 +133,7 @@ def render_recipe(slug, r):
     meta = []
     if r.get("servings"):
         meta.append(f"<li><span>Serves</span>{esc(r['servings'])}</li>")
-    for key, label in (("prep_minutes", "Prep"), ("cook_minutes", "Cook"), ("marinate_minutes", "Marinate")):
+    for key, label in (("prep_minutes", "Prep"), ("cook_minutes", "Cook"), ("marinate_minutes", r.get("rest_label", "Marinate"))):
         if r.get(key):
             meta.append(f"<li><span>{label}</span>{human_minutes(r[key])}</li>")
 
