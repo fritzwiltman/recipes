@@ -30,14 +30,19 @@ def iso_minutes(m):
     """30 -> PT30M, 90 -> PT1H30M (ISO 8601 duration for schema.org)."""
     if m in (None, ""):
         return None
-    m = int(m)
-    h, mins = divmod(m, 60)
-    return "PT" + (f"{h}H" if h else "") + (f"{mins}M" if mins or not h else "")
+    m = float(m)
+    secs = int(round(m * 60))
+    h, rem = divmod(secs, 3600)
+    mins, s = divmod(rem, 60)
+    out = "PT" + (f"{h}H" if h else "") + (f"{mins}M" if mins else "") + (f"{s}S" if s else "")
+    return out if out != "PT" else "PT0M"
 
 
 def human_minutes(m):
-    m = int(m)
+    m = float(m)
     h, mins = divmod(m, 60)
+    h = int(h)
+    mins = int(mins) if mins == int(mins) else mins
     parts = []
     if h:
         parts.append(f"{h} hr")
@@ -126,7 +131,7 @@ def render_recipe(slug, r):
         if v:
             ld[field] = v
     if "totalTime" not in ld and (r.get("prep_minutes") or r.get("cook_minutes")):
-        ld["totalTime"] = iso_minutes(int(r.get("prep_minutes") or 0) + int(r.get("cook_minutes") or 0))
+        ld["totalTime"] = iso_minutes(float(r.get("prep_minutes") or 0) + float(r.get("cook_minutes") or 0))
     if r.get("source"):
         ld["author"] = {"@type": "Person", "name": r["source"]}
 

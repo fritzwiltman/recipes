@@ -3,9 +3,9 @@ description: Thin, crisp sugar-dredged wafers sandwiched with pink butter frosti
 category: Dessert
 servings: About 24 wafers (12 sandwich cookies)
 prep_minutes: 30
-cook_minutes: 9
-marinate_minutes: 120
-rest_label: Chill
+cook_minutes: 8.5
+marinate_minutes: 360
+rest_label: Chill (overnight)
 tags: [cookies, sandwich cookies, frosting]
 
 ingredients:
@@ -19,7 +19,7 @@ ingredients:
       - 1/2 cup granulated sugar, for dredging
   - group: Frosting (doubled)
     items:
-      - 1/2 cup butter, softened
+      - 1/2 cup salted butter, softened
       - 1 1/2 cups powdered sugar
       - 2 egg yolks
       - 2 tsp vanilla extract
@@ -28,10 +28,10 @@ ingredients:
 steps:
   - group: Cookies
     items:
-      - Beat the butter in a mixing bowl until soft and fluffy, about 1 minute.
+      - Beat the unsalted butter in a mixing bowl until soft and fluffy, about 1 minute.
       - Add the 1/4 cup sugar and the vanilla. Beat 3 to 4 minutes until fluffy, scraping down the bowl as needed.
       - Mix in the flour. The dough will look sandy and dry. Add 2 tbsp half-and-half and mix until it comes together and is soft and slightly sticky. If it's still dry, add 1 more tbsp very slowly. You shouldn't need more than 3 tbsp total.
-      - Wrap the dough in plastic, put it in an airtight container, and refrigerate at least 2 hours (up to 5 days).
+      - Wrap the dough in plastic, put it in an airtight container, and refrigerate overnight, at least 6 hours (up to 5 days). 2 hours is not enough.
       - Turn the dough out onto a floured counter, cover it with plastic wrap so it doesn't stick to the pin, and roll it to about 1/8 inch thick.
       - Cut out rounds with a 2-inch cutter. Re-roll the scraps until all the dough is used.
       - Place the rounds on a lined or greased baking sheet. If the dough got soft, cover and chill the tray about 1 hour to prevent spreading.
@@ -40,10 +40,11 @@ steps:
       - Cool 5 minutes on the tray, then move to a wire rack to cool completely.
   - group: Frosting
     items:
-      - Once the cookies are on the cooling rack, blend the butter, powdered sugar, egg yolks, and vanilla.
+      - Once the cookies are on the cooling rack, blend the salted butter, powdered sugar, egg yolks, and vanilla.
       - Add food coloring a drop at a time until you get the color you want. For pink, use 8 drops red and 1 drop blue.
       - Once the cookies are completely cool, sandwich frosting between two wafers.
 
 notes:
   - The frosting amounts are already doubled from the original.
   - Make the frosting after the cookies are on the cooling rack.
+  - Unsalted butter in the wafers, salted butter in the frosting.
